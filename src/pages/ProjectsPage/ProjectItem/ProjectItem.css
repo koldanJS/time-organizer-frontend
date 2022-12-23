@@ -1,0 +1,118 @@
+.projects li.project-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #BEBEBE;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.projects .project-item ul {
+    width: 100%;
+    margin-top: 10px;
+}
+.projects ul.task-list {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+}
+.project-item p {
+    margin: 5px 0;
+}
+.project-item p.mar-r {
+    margin-right: 15px;
+}
+li.tasks img {
+    width: 15px;
+    height: 15px;
+}
+.editor button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.editor button:hover {
+    background-color: white;
+    border: 1px solid #CE6AFD;
+}
+.editor img,
+.add-task img {
+    width: 23px;
+    height: 23px;
+}
+.editor button.save:hover {
+    outline: auto;
+    outline-color: green;
+    background-color: rgb(184, 226, 184);
+}
+.editor button.cancel:hover {
+    outline: auto;
+    outline-color: gray;
+    background-color: rgb(236, 236, 236);
+}
+.editor button.trash:hover {
+    outline: auto;
+    outline-color: red;
+    background-color: rgb(226, 189, 189);
+}
+img.cancel {
+    width: 15px;
+    height: 15px;
+}
+
+.edit-project {
+    resize: none;
+    border-radius: 8px;
+    outline: auto;
+    width: 100%;
+    height: 100px;
+}
+input.add-task {
+    width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    .projects li.project-item {
+        padding-bottom: 5px;
+    }
+    .projects .project-item ul {
+        margin-top: 5px;
+    }
+    .project-item p {
+        margin: 2px 0;
+    }
+    .project-item p.mar-r {
+        margin-right: 7px;
+    }
+    li.tasks img {
+        width: 7px;
+        height: 7px;
+    }
+    .editor button {
+        border-radius: 3px;
+        width: 15px;
+        height: 15px;
+        margin-top: 2px;
+    }
+    .editor img,
+    .add-task img {
+        width: 11px;
+        height: 11px;
+    }
+    img.cancel {
+        width: 7px;
+        height: 7px;
+    }
+    .edit-project {
+        border-radius: 8px;
+        height: 50px;
+    }
+}

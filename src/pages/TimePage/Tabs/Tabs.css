@@ -1,0 +1,13 @@
+.tabs ul {
+    display: flex;
+    list-style: none;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .tabs ul {
+        height: 25px;
+    }
+}

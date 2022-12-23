@@ -1,0 +1,54 @@
+.new-entry-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #188433;
+    border: none;
+    width: 66px;
+    height: 105px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 34px;
+    padding: 0;
+    transition: .2s ease;
+    cursor: pointer;
+}
+.new-entry-btn:hover {
+    background-color: #0e7a29;
+}
+.new-entry-btn:active {
+    background-color: #0a6e23;
+}
+.new-entry-btn img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 6px;
+}
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .new-entry-btn {
+        width: 33px;
+        height: 52px;
+        margin-right: 5px;
+        margin-top: 17px;
+        border-radius: 4px;
+    }
+    .new-entry-btn img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 3px;
+    }
+    .bg {
+        width: 30px;
+        height: 35px;
+    }
+}

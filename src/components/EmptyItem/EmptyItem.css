@@ -1,0 +1,15 @@
+.empty-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 250px;
+    background-color: #f0f0f0;
+    color: rgb(88, 88, 88);
+}
+
+@media screen and (max-width: 800px) {
+    .empty-item {
+        height: 125px;
+    }
+}
