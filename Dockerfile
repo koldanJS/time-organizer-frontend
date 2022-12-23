@@ -2,9 +2,6 @@ FROM node:14.0-alpine
 WORKDIR /app
 COPY package.json .
 RUN npm install
-RUN npm install redux
-RUN npm install redux-thunk
-RUN npm install redux-devtools-extension
 COPY . .
 ENV PORT 3000
 EXPOSE $PORT
