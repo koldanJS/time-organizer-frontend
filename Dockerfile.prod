@@ -1,0 +1,15 @@
+FROM node:14.0-alpine as build
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+ENV PORT 80
+EXPOSE $PORT
+VOLUME ["/app/data"]
+RUN npm run build
+
+FROM nginx
+COPY --from=build app/build /usr/share/nginx/html
+
+# docker build -f Dockerfile.prod -t client-timer .
+# run-prod: docker run -d -p 80:80 -v data:/app/data --name timer-app client-timer
