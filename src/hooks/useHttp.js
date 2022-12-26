@@ -9,13 +9,12 @@ export const useHttp = () => {
     async (url, method = "GET", body = null, headers = {}) => {
       setLoading(true);
       try {
-        const baseUrl = "http://18.157.239.114";
         //Чтоб body отправлялся как строка (иначе стандартный toString преобразует в [object Object])
         if (body) {
           body = JSON.stringify(body);
           headers["Content-Type"] = "application/json";
         }
-        const response = await fetch(`${baseUrl}${url}`, {
+        const response = await fetch(url, {
           method,
           body,
           headers,
