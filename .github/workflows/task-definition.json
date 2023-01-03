@@ -64,7 +64,7 @@
   },
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
-  "memory": "2048",
+  "memory": "512",
   "registeredAt": "2022-12-26T12:47:15.757000+03:00",
   "registeredBy": "arn:aws:sts::089655067548:assumed-role/AWSReservedSSO_AdministratorAccess_e8cb456a77b8a817/daniil.kolodkin@digifi.io"
 }
