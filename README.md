@@ -1,4 +1,4 @@
-# time-organizer-v2
+# time-organizer-v3
 
 Status of last Deployment: <br>
 <img src="https://github.com/koldanJS/time-organizer-frontend/workflows/Deploy-to-Amazon-ECS/badge.svg?branch=master" ><br>
